@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ClubHub - Atelier Arduino</title>
+</head>
+<body>
+    <header>
+        <h1>ClubHub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenements.html">Tous les événements</a></li>
+                <li><a href="evenement.html">Atelier Arduino</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Atelier Arduino pour débutants</h1>
+            <p>Club : Club Robotique</p>
+            <p>Date : <time datetime="2026-10-14T14:00">14 octobre à 14 h</time></p>
+            <p>Lieu : Salle B204</p>
+            <p>Places disponibles : 20</p>
+
+            <p>Découvrez les bases de l'électronique et de la programmation avec Arduino.<br>
+                Vous réaliserez un premier montage guidé par les membres du Club Robotique.<br>
+                Aucun prérequis n'est nécessaire pour participer à cet atelier.</p>
+
+            <section>
+                <h2 id="programme">Au programme</h2>
+                <ul>
+                    <li>Découverte de la carte Arduino</li>
+                    <li>Branchement d'une LED</li>
+                    <li>Écriture d'un premier programme</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="apporter">À apporter</h2>
+                <ul>
+                    <li>Un ordinateur portable</li>
+                    <li>Un carnet pour prendre des notes</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="inscription">
+                <h2 id="inscription">Formulaire d'inscription</h2>
+                <form id="inscription-form" action="inscription.php" method="post">
+                    <p>
+                        <label for="nom-complet">Nom complet</label>
+                        <input type="text" id="nom-complet" name="nom_complet" minlength="3" required>
+                    </p>
+                    <p>
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="niveau">Niveau d'études</label>
+                        <select id="niveau" name="niveau">
+                            <option value="1re-annee">1re année</option>
+                            <option value="2e-annee">2e année</option>
+                            <option value="3e-annee">3e année</option>
+                        </select>
+                    </p>
+                    <fieldset>
+                        <legend>Avez-vous déjà utilisé un Arduino ?</legend>
+                        <p>
+                            <input type="radio" id="arduino-oui" name="a_deja_utilise_arduino" value="oui">
+                            <label for="arduino-oui">Oui</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="arduino-non" name="a_deja_utilise_arduino" value="non">
+                            <label for="arduino-non">Non</label>
+                        </p>
+                    </fieldset>
+                    <p>
+                        <label for="motivation">Motivation</label>
+                        <textarea id="motivation" name="motivation" rows="5" cols="40"></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="reglement" name="accepte_reglement" value="oui" required>
+                        <label for="reglement">J'accepte le règlement du club</label>
+                    </p>
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>ClubHub - Les clubs étudiants réunis au même endroit.</p>
+    </footer>
+</body>
+</html>
