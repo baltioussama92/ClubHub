@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ClubHub
 
 ## TP2
@@ -16,3 +17,6 @@
 ### Erreur de console rencontrée
 
 Au début, le script tentait d'ajouter des écouteurs à des éléments absents des pages qui ne contiennent pas de formulaire ou de liste d'événements. Cela provoquait une erreur `Cannot read properties of null`. J'ai corrigé le problème en testant la présence de chaque conteneur avant d'initialiser sa fonctionnalité (`if (!form) return` et `if (!list) return`).
+=======
+nejemeddinne mehedbi
+>>>>>>> 20bb22cdd2618ccd1ff146f2d1c129ab536f0731
